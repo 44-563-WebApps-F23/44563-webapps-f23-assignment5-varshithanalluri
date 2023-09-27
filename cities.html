@@ -19,6 +19,15 @@
         padding: 10px;
         color:rgb(65, 19, 217);
     }
+    .image{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .thumbnail {
+            display: flex;
+            justify-content: space-between;
+        }
 </style>
   <title>REsponsive Page</title>
   <meta charset="utf-8">
@@ -59,5 +68,17 @@
         class targets small and medium-sized screens, 
         usually screens with a width equal to or greater than the "sm" breakpoint.
         Columns with "col-sm-2" have a fixed width and will not stack vertically based on screen size.</p>
+        <div class="image">
+            <img src="city1.jpg" alt="City 1" class="img-fluid">
+            <img src="city2.jpg" alt="City 2" class="img-fluid">
+            <img src="city3.jpg" alt="City 3" class="img-fluid">
+        </div>
+    
+        <!-- Second div container for thumbnail images -->
+        <div class="thumbnail">
+            <img src="city1.jpg" alt="City 1" class="img-thumbnail">
+            <img src="city2.jpg" alt="City 2" class="img-thumbnail">
+            <img src="city3.jpg" alt="City 3" class="img-thumbnail">
+        </div>
 </body>
 </html>
