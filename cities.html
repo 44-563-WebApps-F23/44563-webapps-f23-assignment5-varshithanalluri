@@ -1,84 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <style>
-    .container {
-        margin-top: 23px;
-        text-align: left;
-    }
-    .row {
-        margin-bottom: 13px;
-    }
-    .col-sm-2 {
-        border: 1px solid #06e77a;
-        padding: 10px;
-        color:rgb(232, 7, 142);
-    }
-    .col-md {
-        border: 1px solid #d31111;
-        padding: 10px;
-        color:rgb(65, 19, 217);
-    }
-    .image{
+    <title>Responsive</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .row {
+            margin-bottom: 10px;
+        }
+
+        .col-sm-2,
+        .col-md {
+            border: 1px solid #0ac973;
+            padding: 10px;
+        }
+
+        .image-container {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
         }
-        .thumbnail {
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            margin-bottom: 10px;
+        }
+
+        .thumbnail-container {
             display: flex;
             justify-content: space-between;
         }
-</style>
-  <title>REsponsive Page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</head>
-<body>
 
-<h3>Visit cities with Nalluri Varshitha</h3>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-2">N</div>
-        <div class="col-sm-2">A</div>
-        <div class="col-sm-2">L</div>
-        <div class="col-sm-2">L</div>
-        <div class="col-sm-2">U</div>
-        <div class="col-sm-2">R</div>
+        .thumbnail-container img {
+            width: 100px;
+            height: auto;
+            margin-top: 10px;
+        }
+
+        .table-bordered {
+            border: 3px solid rgb(9, 177, 104);
+        }
+
+        .table-bordered th {
+            table-layout: fixed;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .table-bordered td {
+            text-align: center;
+        }
+
+        .table-striped-custom tbody tr:nth-child(odd) {
+          background-color: #600313; 
+      }
+
+       
+        .table-bordered tbody tr:hover td {
+            background-color: #ec0b0f;
+            color: #fff;
+        }
+
+        .table-bordered th {
+            
+            color: rgb(254, 18, 211);
+        }
+
+        .table-bordered th:hover {
+            background-color: #dc8a0f;
+            color: #df1f1f;
+        }
+
+        .table-bordered th,
+        .table-bordered td {
+            padding: 10px 150px;
+        }
+
+        
+       
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light"
+        style="font-family:'Times New Roman', Times, serif; font-size: larger; font-size: larger;">
+        <a class="navbar-brand" href="cities.html">A Few Cities</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#InsectNavbarContent"
+            aria-controls="InsectNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggle-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="basic.html">Basic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Advanced.html">Advanced</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 style="text-align: center; font-size: 44px; color: #2906f0;">Visit cities with Varshitha Nalluri</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">N</div>
+            <div class="col-sm-2">A</div>
+            <div class="col-sm-2">L</div>
+            <div class="col-sm-2">L</div>
+            <div class="col-sm-2">U</div>
+            <div class="col-sm-2">R</div>
+        </div>
+        <div class="row">
+            <div class="col-md">New York</div>
+            <div class="col-md">Albany</div>
+            <div class="col-md">Los Angeles</div>
+            <div class="col-md">London</div>
+            <div class="col-md">Upland</div>
+            <div class="col-md">Raleigh</div>
+        </div>
     </div>
-    <div class="row">
-        <div class="col-md">New York</div>
-        <div class="col-md">Albany</div>
-        <div class="col-md">Los Angeles</div>
-        <div class="col-md">London</div>
-        <div class="col-md">Upland</div>
-        <div class="col-md">Raleigh</div>
-    </div>
-    </div>
-    <p>when you reduce the browser window size gradually, 2nd row (Names of the city) will 
+    <p>
+        when you reduce the browser window size gradually, 2nd row (Names of the city) will 
         break first into a vertical stack because it uses the "col-md" class,
          and the columns will start forming vertically 
         when the screen size becomes smaller than the "md" breakpoint.The "col-sm-2" 
         class targets small and medium-sized screens, 
         usually screens with a width equal to or greater than the "sm" breakpoint.
-        Columns with "col-sm-2" have a fixed width and will not stack vertically based on screen size.</p>
-        <div class="image">
-            <img src="city1.jpg" alt="City 1" class="img-fluid">
-            <img src="city2.jpg" alt="City 2" class="img-fluid">
-            <img src="city3.jpg" alt="City 3" class="img-fluid">
-        </div>
+        Columns with "col-sm-2" have a fixed width and will not stack vertically based on screen size.
+    </p>
+
+    <br>
+    <hr>
+    <br>
+    <div class="image-container">
+        <img src="city1.jpg" alt="City 1" class="img-fluid">
+        <img src="city2.jpeg" alt="City 2" class="img-fluid">
+        <img src="city3.jpg" alt="City 3" class="img-fluid">
+    </div>
+
     
-        <!-- Second div container for thumbnail images -->
-        <div class="thumbnail">
-            <img src="city1.jpg" alt="City 1" class="img-thumbnail">
-            <img src="city2.jpg" alt="City 2" class="img-thumbnail">
-            <img src="city3.jpg" alt="City 3" class="img-thumbnail">
-        </div>
+    <div class="thumbnail-container">
+        <img src="City1.jpg" alt="City 1" class="img-thumbnail">
+        <img src="City2.jpeg" alt="City 2" class="img-thumbnail">
+        <img src="City3.jpg" alt="City 3" class="img-thumbnail">
+    </div>
+    <br>
+    <br>
+    <hr>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped caption-top">
+            <caption><center><strong>Table CITIES</strong></center></caption>
+            <thead>
+                <tr>
+                    <th scope="col">LETTER</th>
+                    <th scope="col">CITY</th>
+                    <th scope="col">RIVER</th>
+                    <th scope="col">TREE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">N</th>
+                    <td>Newyork</td>
+                    <td>Nile</td>
+                    <td>nested tree</td>
+                </tr>
+                <tr>
+                    <th scope="row">A</th>
+                    <td>Albany</td>
+                    <td>Amazon</td>
+                    <td>Apricot</td>
+                </tr>
+                <tr>
+                    <th scope="row">L</th>
+                    <td>Los Angeles</td>
+                    <td>logo River</td>
+                    <td>Lost Tree</td>
+                </tr>
+                <tr>
+                    <th scope="row">L</th>
+                    <td>London</td>
+                    <td>Log River</td>
+                    <td>Leech Tree</td>
+                </tr>
+                <tr>
+                    <th scope="row">U</th>
+                    <td>Upland</td>
+                    <td>Umbrella River</td>
+                    <td>Uganda Tree</td>
+                </tr>
+                <tr>
+                    <th scope="row">R</th>
+                    <td>Raleigh</td>
+                    <td>Rost River</td>
+                    <td>Rose tree</td>
+                </tr>
+
+                
+            </tbody>
+        </table>
+    </div>
+    <hr>
+      <!-- Button Groups -->
+      <div class="btn-toolbar">
+      <div class="btn-group" role="group" aria-label="Success Buttons - Cities with Images">
+          <button class="btn btn-success">N</button>
+          <button class="btn btn-success">L</button>
+          <button class="btn btn-success">R</button>
+      </div>
+
+      <div class="btn-group" role="group" aria-label="Alert Buttons - Cities without Images">
+          <button class="btn btn-warning">L</button>
+          <button class="btn btn-warning">U</button>
+      </div>
+
+      <div class="btn-group" role="group" aria-label="Danger Button - Additional Buttons">
+          <button class="btn btn-danger">A</button>
+      </div>
+  </div>
+</div>
+
+<div   class="dropdown" Style="position: relative; display: inline-block;">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
+        <li><a class="dropdown-item" href="Advanced.html">Advanced Page</a></li>
+    </div>
+  </div>
+</center>
 </body>
+
 </html>
